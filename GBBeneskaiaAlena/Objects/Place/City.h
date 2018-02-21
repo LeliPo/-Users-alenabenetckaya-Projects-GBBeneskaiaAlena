@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
+#import "Place.h"
 
 @interface City : NSObject
 @property (nonatomic, strong) NSString * name;
@@ -14,6 +16,7 @@
 @property (nonatomic, strong) NSDictionary * translations;
 @property (nonatomic, strong) NSString * countryCode;
 @property (nonatomic, strong) NSString * code;
-//@property (nonatomic) CLLocationCoordinate2D  coordinate;
+@property (nonatomic) CLLocationCoordinate2D  coordinate;
+
 - ( instancetype) initWithDictionary:( NSDictionary * )dictionary;
 @end

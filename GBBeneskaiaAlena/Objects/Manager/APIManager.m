@@ -10,10 +10,12 @@
 #import "Ticket.h"
 #import "APIManager.m"
 #import "DataManager.h"
+#import "MapPrice.h"
 
-#define API_MAIN_HOST   @"api.travelpayouts.com/v1/prices/cheap"
-#define API_GET_IP      @"https://api.ipify.org/?format=json"
-#define API_CITY_FOR_IP @"https://www.travelpayouts.com/whereami?ip="
+#define API_MAIN_HOST       @"api.travelpayouts.com/v1/prices/cheap"
+#define API_GET_IP          @"https://api.ipify.org/?format=json"
+#define API_CITY_FOR_IP     @"https://www.travelpayouts.com/whereami?ip="
+#define API_URL_MAP_PRICE   @"http://map.aviasales.ru/prices.json?origin_iata="
 
 
 @interface APIManager ()
@@ -64,14 +66,32 @@
 
 - (void)loadWithURLString:(NSString *)urlString completion:(void (^)(id _Nullable result))completion {
     NSURL *url = [[NSURL alloc] initWithString:urlString];
-    UIApplication.sharedApplication.networkActivityIndicatorVisible = YES;
+   
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIApplication.sharedApplication.networkActivityIndicatorVisible = YES;
+    });
+    
     [[NSURLSession.sharedSession
       dataTaskWithURL:url
       completionHandler:^(
-                          NSData *_Nullable data, NSURLResponse *_Nullable response, NSError *_Nullable error) {
-          dispatch_async(dispatch_get_main_queue(), ^{
-              UIApplication.sharedApplication.networkActivityIndicatorVisible = NO;
-          });
+              NSData *_Nullable data, NSURLResponse *_Nullable response, NSError *_Nullable error) {
+          
+          
+          if (error) {
+              NSLog(@"[%@ %@]: download error:%@", NSStringFromClass(self.class), NSStringFromSelector(_cmd), error);
+              dispatch_async(dispatch_get_main_queue(), ^{
+                  UIApplication.sharedApplication.networkActivityIndicatorVisible = NO;
+              });
+              return;
+          } else if (data.length == 0) {
+              NSLog(@"[%@ %@]: download error: server responded with empty data block",
+                    NSStringFromClass(self.class), NSStringFromSelector(_cmd));
+              dispatch_async(dispatch_get_main_queue(), ^{
+                  UIApplication.sharedApplication.networkActivityIndicatorVisible = NO;
+              });
+              return;
+          }
+          
           completion([NSJSONSerialization JSONObjectWithData:data
                                                      options:NSJSONReadingMutableContainers
                                                        error:nil]);
@@ -146,6 +166,38 @@
 - (NSURL *)urlWithAirlineLogoForIATACode:(NSString *)code {
     return [NSURL URLWithString:[NSString stringWithFormat:@ "https://pics.avs.io/200/200/%@.png", code]];
 }
+
+- (void)mapPricesFor:(City *)origin withCompletion:(void (^)(NSArray *prices))completion {
+    NSLog(@"%@ %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd));
+    static BOOL isLoading;
+    if (isLoading) {return;}
+    isLoading = YES;
+    NSString *urlString = [NSString stringWithFormat:@"%@%@", API_URL_MAP_PRICE, origin.code];
+    [self loadWithURLString:urlString completion:^(id _Nullable result) {
+        
+        NSDictionary *dictionary = result;
+        if ([result isKindOfClass:NSDictionary.class]) {
+            if (dictionary[@"errors"]) {
+                NSLog(@"Error received from server: %@", dictionary[@"errors"]);
+                return;
+            }
+        }
+        
+        NSArray *array = result;
+        NSMutableArray *prices = [NSMutableArray new];
+        if (array) {
+            for (NSDictionary *mapPriceDictionary in array) {
+                MapPrice *mapPrice = [[MapPrice alloc] initWithDictionary:mapPriceDictionary withOrigin:origin];
+                [prices addObject:mapPrice];
+            }
+            isLoading = NO;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion(prices);
+            });
+        }
+    }];
+}
+
 
 @end
 

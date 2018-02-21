@@ -11,7 +11,7 @@
 + (instancetype)newWithFrame:(CGRect)frame usingTitle:(NSString *__nullable)title alignment:(NSTextAlignment)alignment {
     UILabel *label = [[UILabel alloc] initWithFrame:frame];
     label.font = [UIFont systemFontOfSize:19];
-    label.textColor = UIColor.blackColor;
+    label.textColor = UIColor.cyanColor;
     if (alignment) {
         label.textAlignment = alignment;
     } else {

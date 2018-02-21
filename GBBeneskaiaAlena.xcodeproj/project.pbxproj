@@ -25,6 +25,10 @@
 		C7313696202C9D9C00EDC340 /* UIView+GetController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7313695202C9D9C00EDC340 /* UIView+GetController.m */; };
 		C7313699202C9DB400EDC340 /* PlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7313697202C9DB400EDC340 /* PlacesTableViewController.m */; };
 		C731369C202C9DC700EDC340 /* PlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C731369A202C9DC700EDC340 /* PlaceTableViewCell.m */; };
+		C76F814B203876DD003704BE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76F8149203876DD003704BE /* MapViewController.m */; };
+		C76F814E2038771C003704BE /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = C76F814C2038771C003704BE /* LocationService.m */; };
+		C76F81512038772A003704BE /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = C76F814F2038772A003704BE /* MapPrice.m */; };
+		C76F815D20387D38003704BE /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76F815C20387D38003704BE /* TabBarController.m */; };
 		C7B18F282025A3D7004D9516 /* UILable.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B18F272025A3D7004D9516 /* UILable.m */; };
 		C7B18F2B2025A7B5004D9516 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B18F2A2025A7B5004D9516 /* NavigationViewController.m */; };
 		C7B18F352025AAFE004D9516 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B18F342025AAFE004D9516 /* City.m */; };
@@ -36,6 +40,12 @@
 		C7B18F4C2026F709004D9516 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B18F4B2026F709004D9516 /* MainViewController.m */; };
 		C7B18F4F2026F7E3004D9516 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B18F4E2026F7E3004D9516 /* AnotherViewController.m */; };
 		C7B18F6220274C7A004D9516 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B18F6120274C7A004D9516 /* PlaceViewController.m */; };
+		C7B25FB0203D663A009A2CE3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B25FAF203D663A009A2CE3 /* CoreData.framework */; };
+		C7B25FB3203D6741009A2CE3 /* FavoriteTicket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7B25FB1203D6741009A2CE3 /* FavoriteTicket.xcdatamodeld */; };
+		C7B25FC9203D6D68009A2CE3 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B25FC5203D6D68009A2CE3 /* map.png */; };
+		C7B25FCA203D6D68009A2CE3 /* search_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B25FC6203D6D68009A2CE3 /* search_selected.png */; };
+		C7B25FCB203D6D68009A2CE3 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B25FC7203D6D68009A2CE3 /* search.png */; };
+		C7B25FCC203D6D68009A2CE3 /* map_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B25FC8203D6D68009A2CE3 /* map_selected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +87,15 @@
 		C7313698202C9DB400EDC340 /* PlacesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesTableViewController.h; sourceTree = "<group>"; };
 		C731369A202C9DC700EDC340 /* PlaceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceTableViewCell.m; sourceTree = "<group>"; };
 		C731369B202C9DC700EDC340 /* PlaceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceTableViewCell.h; sourceTree = "<group>"; };
+		C76F8149203876DD003704BE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		C76F814A203876DD003704BE /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		C76F814C2038771C003704BE /* LocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		C76F814D2038771C003704BE /* LocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		C76F814F2038772A003704BE /* MapPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
+		C76F81502038772A003704BE /* MapPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPrice.h; sourceTree = "<group>"; };
+		C76F81522038796A003704BE /* Place.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		C76F815B20387D38003704BE /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		C76F815C20387D38003704BE /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		C7B18F262025A3D7004D9516 /* UILable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILable.h; sourceTree = "<group>"; };
 		C7B18F272025A3D7004D9516 /* UILable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILable.m; sourceTree = "<group>"; };
 		C7B18F292025A7B5004D9516 /* NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
@@ -96,6 +115,12 @@
 		C7B18F4E2026F7E3004D9516 /* AnotherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnotherViewController.m; sourceTree = "<group>"; };
 		C7B18F6020274C7A004D9516 /* PlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
 		C7B18F6120274C7A004D9516 /* PlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
+		C7B25FAF203D663A009A2CE3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C7B25FB2203D6741009A2CE3 /* FavoriteTicket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteTicket.xcdatamodel; sourceTree = "<group>"; };
+		C7B25FC5203D6D68009A2CE3 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../../../../../.Trash/map.png; sourceTree = "<group>"; };
+		C7B25FC6203D6D68009A2CE3 /* search_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search_selected.png; path = ../../../../../.Trash/search_selected.png; sourceTree = "<group>"; };
+		C7B25FC7203D6D68009A2CE3 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search.png; path = ../../../../../.Trash/search.png; sourceTree = "<group>"; };
+		C7B25FC8203D6D68009A2CE3 /* map_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_selected.png; path = ../../../../../.Trash/map_selected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B25FB0203D663A009A2CE3 /* CoreData.framework in Frameworks */,
 				C13BC42BCE9973DF76A2F8BE /* libPods-GBBeneskaiaAlena.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +148,9 @@
 		8AE954BE78B53018747117B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7B25FAF203D663A009A2CE3 /* CoreData.framework */,
 				3A964A5ED686B7B797F4E58A /* libPods-GBBeneskaiaAlena.a */,
+				C7B25FB1203D6741009A2CE3 /* FavoriteTicket.xcdatamodeld */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,8 +180,6 @@
 				C721E8CB2021FDEA008729D9 /* AppDelegate.m */,
 				C7B18F53202743CF004D9516 /* View */,
 				C7B18F362025AB21004D9516 /* Objects */,
-				C7B18F262025A3D7004D9516 /* UILable.h */,
-				C7B18F272025A3D7004D9516 /* UILable.m */,
 				C7B18F492026F377004D9516 /* JSON */,
 				C721E8D32021FDEA008729D9 /* Assets.xcassets */,
 				C721E8D52021FDEA008729D9 /* LaunchScreen.storyboard */,
@@ -172,6 +198,7 @@
 				C7B18F342025AAFE004D9516 /* City.m */,
 				C7B18F3A2025ADFC004D9516 /* Airport.h */,
 				C7B18F3B2025ADFC004D9516 /* Airport.m */,
+				C76F81522038796A003704BE /* Place.h */,
 			);
 			path = Place;
 			sourceTree = "<group>";
@@ -200,6 +227,10 @@
 				C7313691202C9D8A00EDC340 /* UIColor+ColorPalette.m */,
 				C7313694202C9D9C00EDC340 /* UIView+GetController.h */,
 				C7313695202C9D9C00EDC340 /* UIView+GetController.m */,
+				C7313678202C996900EDC340 /* NSDate+FromISOString.h */,
+				C7313679202C996C00EDC340 /* NSDate+FromISOString.m */,
+				C7B18F262025A3D7004D9516 /* UILable.h */,
+				C7B18F272025A3D7004D9516 /* UILable.m */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -226,6 +257,38 @@
 				C731369A202C9DC700EDC340 /* PlaceTableViewCell.m */,
 			);
 			path = Place;
+			sourceTree = "<group>";
+		};
+		C76F81472038768D003704BE /* AnotherView */ = {
+			isa = PBXGroup;
+			children = (
+				C7B18F4D2026F7E3004D9516 /* AnotherViewController.h */,
+				C7B18F4E2026F7E3004D9516 /* AnotherViewController.m */,
+				C7B18F292025A7B5004D9516 /* NavigationViewController.h */,
+				C7B18F2A2025A7B5004D9516 /* NavigationViewController.m */,
+				C731367D202C99BF00EDC340 /* TicketTableViewCell.h */,
+				C731367C202C99BF00EDC340 /* TicketTableViewCell.m */,
+				C76F815B20387D38003704BE /* TabBarController.h */,
+				C76F815C20387D38003704BE /* TabBarController.m */,
+			);
+			path = AnotherView;
+			sourceTree = "<group>";
+		};
+		C76F8148203876C9003704BE /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C76F814A203876DD003704BE /* MapViewController.h */,
+				C76F8149203876DD003704BE /* MapViewController.m */,
+				C76F814D2038771C003704BE /* LocationService.h */,
+				C76F814C2038771C003704BE /* LocationService.m */,
+				C76F81502038772A003704BE /* MapPrice.h */,
+				C76F814F2038772A003704BE /* MapPrice.m */,
+				C7B25FC8203D6D68009A2CE3 /* map_selected.png */,
+				C7B25FC5203D6D68009A2CE3 /* map.png */,
+				C7B25FC6203D6D68009A2CE3 /* search_selected.png */,
+				C7B25FC7203D6D68009A2CE3 /* search.png */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		C7B18F362025AB21004D9516 /* Objects */ = {
@@ -257,14 +320,8 @@
 				C731369E202C9F7E00EDC340 /* main */,
 				C731369F202C9F9000EDC340 /* Place */,
 				C731369D202C9EDB00EDC340 /* UIComponent */,
-				C7B18F4D2026F7E3004D9516 /* AnotherViewController.h */,
-				C7B18F4E2026F7E3004D9516 /* AnotherViewController.m */,
-				C7B18F292025A7B5004D9516 /* NavigationViewController.h */,
-				C7B18F2A2025A7B5004D9516 /* NavigationViewController.m */,
-				C731367D202C99BF00EDC340 /* TicketTableViewCell.h */,
-				C731367C202C99BF00EDC340 /* TicketTableViewCell.m */,
-				C7313678202C996900EDC340 /* NSDate+FromISOString.h */,
-				C7313679202C996C00EDC340 /* NSDate+FromISOString.m */,
+				C76F8148203876C9003704BE /* Map */,
+				C76F81472038768D003704BE /* AnotherView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,11 +387,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B25FC9203D6D68009A2CE3 /* map.png in Resources */,
 				C7B18F462025B016004D9516 /* cities.json in Resources */,
 				C721E8D72021FDEA008729D9 /* LaunchScreen.storyboard in Resources */,
+				C7B25FCB203D6D68009A2CE3 /* search.png in Resources */,
 				C7B18F472025B016004D9516 /* countries.json in Resources */,
 				C721E8D42021FDEA008729D9 /* Assets.xcassets in Resources */,
+				C7B25FCA203D6D68009A2CE3 /* search_selected.png in Resources */,
 				C7B18F482025B016004D9516 /* airports.json in Resources */,
+				C7B25FCC203D6D68009A2CE3 /* map_selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,13 +460,17 @@
 				C7B18F3C2025ADFC004D9516 /* Airport.m in Sources */,
 				C7313690202C9D7B00EDC340 /* UIButton+Style.m in Sources */,
 				C7313693202C9D8A00EDC340 /* UIColor+ColorPalette.m in Sources */,
+				C76F815D20387D38003704BE /* TabBarController.m in Sources */,
+				C76F814B203876DD003704BE /* MapViewController.m in Sources */,
 				C7313696202C9D9C00EDC340 /* UIView+GetController.m in Sources */,
 				C7313699202C9DB400EDC340 /* PlacesTableViewController.m in Sources */,
 				C7B18F392025AB4B004D9516 /* Country.m in Sources */,
 				C7B18F352025AAFE004D9516 /* City.m in Sources */,
 				C7B18F4C2026F709004D9516 /* MainViewController.m in Sources */,
 				C7313686202C9C3000EDC340 /* MainView.m in Sources */,
+				C7B25FB3203D6741009A2CE3 /* FavoriteTicket.xcdatamodeld in Sources */,
 				C7313680202C99BF00EDC340 /* TicketTableViewCell.m in Sources */,
+				C76F814E2038771C003704BE /* LocationService.m in Sources */,
 				C731367A202C996C00EDC340 /* NSDate+FromISOString.m in Sources */,
 				C731368A202C9D3A00EDC340 /* DataManager.m in Sources */,
 				C7B18F282025A3D7004D9516 /* UILable.m in Sources */,
@@ -418,6 +483,7 @@
 				C7B18F2B2025A7B5004D9516 /* NavigationViewController.m in Sources */,
 				C721E8DA2021FDEA008729D9 /* main.m in Sources */,
 				C721E8CC2021FDEA008729D9 /* AppDelegate.m in Sources */,
+				C76F81512038772A003704BE /* MapPrice.m in Sources */,
 				C731369C202C9DC700EDC340 /* PlaceTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +658,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C7B25FB1203D6741009A2CE3 /* FavoriteTicket.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C7B25FB2203D6741009A2CE3 /* FavoriteTicket.xcdatamodel */,
+			);
+			currentVersion = C7B25FB2203D6741009A2CE3 /* FavoriteTicket.xcdatamodel */;
+			path = FavoriteTicket.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C721E8BF2021FDEA008729D9 /* Project object */;
 }

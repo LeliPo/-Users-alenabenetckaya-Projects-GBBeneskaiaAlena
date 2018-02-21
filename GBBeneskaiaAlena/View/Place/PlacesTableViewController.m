@@ -52,7 +52,7 @@ static NSString *cellId = @"PlaceCell";
     _segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"Города", @"Аэропорты"]];
     [_segmentedControl addTarget:self action:@selector(changeSource)
                 forControlEvents:UIControlEventValueChanged];
-    _segmentedControl.tintColor = [UIColor blackColor];
+    _segmentedControl.tintColor = [UIColor blackColor]; 
     self.navigationItem.titleView = _segmentedControl;
     _segmentedControl.selectedSegmentIndex = 0;
     [self changeSource];

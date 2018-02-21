@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "City.h"
 #import "DataManager.h"
 #import "SearchRequest.h"
 
@@ -15,10 +16,10 @@
 + (instancetype)sharedInstance;
 
 - (void)cityForCurrentIP:(void (^)(City *city))completion;
-
 - (void)ticketsWithRequest:(SearchRequest)request withCompletion:(void (^)(NSArray *tickets))completion;
-
 - (NSURL *)urlWithAirlineLogoForIATACode:(NSString *)code;
+
+- (void)mapPricesFor:(City *)origin withCompletion:(void (^)(NSArray *prices))completion;
 @end
 
 
