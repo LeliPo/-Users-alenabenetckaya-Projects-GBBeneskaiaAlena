@@ -7,10 +7,9 @@
 //
 
 #import "PlaceViewController.h"
+#import "SearchResultsTableViewController.h"
 
 #define ReuseIdentifier @"CellIdentifier"
-
-
 @interface PlaceViewController () <UISearchResultsUpdating>
 @property (nonatomic) PlaceType placeType;
 @property (nonatomic, strong) UITableView *tableView;
@@ -19,9 +18,7 @@
 @property (nonatomic, strong) NSArray *searchArray;
 @property (nonatomic, strong) UISearchController *searchController;
 @end
-
 @implementation PlaceViewController
-
 - (instancetype)initWithType:(PlaceType)type
 {
     self = [super init];
@@ -33,16 +30,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
-    
     _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
     _searchController.dimsBackgroundDuringPresentation = NO;
     _searchController.searchResultsUpdater = self;
     _searchArray = [NSArray new];
-    
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    
     if (@available(iOS 11.0, *)) {
         self.navigationItem.searchController = _searchController;
     } else {
@@ -76,8 +70,15 @@
     }
     [self.tableView reloadData];
 }
-
-
+#pragma mark - UISearchResultsUpdating
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    if (searchController.searchBar.text) {
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.name CONTAINS[cd] %@",
+                                  searchController.searchBar.text];
+        _searchArray = [_currentArray filteredArrayUsingPredicate: predicate];
+        [_tableView reloadData];
+    }
+}
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -97,12 +98,13 @@
     }
     if (_segmentedControl.selectedSegmentIndex == 0) {
         City *city = (_searchController.isActive && [_searchArray count] > 0) ? [_searchArray
-        objectAtIndex:indexPath.row] : [_currentArray objectAtIndex:indexPath.row];
+                                                                                 objectAtIndex:indexPath.row] : [_currentArray objectAtIndex:indexPath.row];
         cell.textLabel.text = city.name;
         cell.detailTextLabel.text = city.code;
     }
     else if (_segmentedControl.selectedSegmentIndex == 1) {
-        Airport *airport = (_searchController.isActive && [_searchArray count] > 0) ? [_searchArray objectAtIndex:indexPath.row] : [_currentArray objectAtIndex:indexPath.row];
+        Airport *airport = (_searchController.isActive && [_searchArray count] > 0) ? [_searchArray
+                                                                                       objectAtIndex:indexPath.row] : [_currentArray objectAtIndex:indexPath.row];
         cell.textLabel.text = airport.name;
         cell.detailTextLabel.text = airport.code;
     }
@@ -111,7 +113,6 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DataSourceType dataType = ((int)_segmentedControl.selectedSegmentIndex) + 1;
-    
     if (_searchController.isActive && [_searchArray count] > 0) {
         [self.delegate selectPlace:[_searchArray objectAtIndex:indexPath.row] withType:_placeType
                        andDataType:dataType];

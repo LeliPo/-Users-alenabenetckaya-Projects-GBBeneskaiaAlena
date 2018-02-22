@@ -46,6 +46,7 @@
 		C7B25FCA203D6D68009A2CE3 /* search_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B25FC6203D6D68009A2CE3 /* search_selected.png */; };
 		C7B25FCB203D6D68009A2CE3 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B25FC7203D6D68009A2CE3 /* search.png */; };
 		C7B25FCC203D6D68009A2CE3 /* map_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B25FC8203D6D68009A2CE3 /* map_selected.png */; };
+		C7B25FCF203F0900009A2CE3 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B25FCE203F0900009A2CE3 /* CoreDataHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +122,8 @@
 		C7B25FC6203D6D68009A2CE3 /* search_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search_selected.png; path = ../../../../../.Trash/search_selected.png; sourceTree = "<group>"; };
 		C7B25FC7203D6D68009A2CE3 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search.png; path = ../../../../../.Trash/search.png; sourceTree = "<group>"; };
 		C7B25FC8203D6D68009A2CE3 /* map_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_selected.png; path = ../../../../../.Trash/map_selected.png; sourceTree = "<group>"; };
+		C7B25FCD203F0900009A2CE3 /* CoreDataHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		C7B25FCE203F0900009A2CE3 /* CoreDataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +153,6 @@
 			children = (
 				C7B25FAF203D663A009A2CE3 /* CoreData.framework */,
 				3A964A5ED686B7B797F4E58A /* libPods-GBBeneskaiaAlena.a */,
-				C7B25FB1203D6741009A2CE3 /* FavoriteTicket.xcdatamodeld */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -212,6 +214,7 @@
 				C731366F202C343500EDC340 /* APIManager.h */,
 				C7313670202C343500EDC340 /* APIManager.m */,
 				C7313687202C9C6900EDC340 /* SearchRequest.h */,
+				C7B6D5E9203F0CDA00EA0990 /* CoreData */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -324,6 +327,16 @@
 				C76F81472038768D003704BE /* AnotherView */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C7B6D5E9203F0CDA00EA0990 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C7B25FB1203D6741009A2CE3 /* FavoriteTicket.xcdatamodeld */,
+				C7B25FCD203F0900009A2CE3 /* CoreDataHelper.h */,
+				C7B25FCE203F0900009A2CE3 /* CoreDataHelper.m */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,6 +495,7 @@
 				C731367F202C99BF00EDC340 /* SearchResultsTableViewController.m in Sources */,
 				C7B18F2B2025A7B5004D9516 /* NavigationViewController.m in Sources */,
 				C721E8DA2021FDEA008729D9 /* main.m in Sources */,
+				C7B25FCF203F0900009A2CE3 /* CoreDataHelper.m in Sources */,
 				C721E8CC2021FDEA008729D9 /* AppDelegate.m in Sources */,
 				C76F81512038772A003704BE /* MapPrice.m in Sources */,
 				C731369C202C9DC700EDC340 /* PlaceTableViewCell.m in Sources */,
@@ -550,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -599,7 +613,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

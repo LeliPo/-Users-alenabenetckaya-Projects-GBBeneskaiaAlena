@@ -60,6 +60,7 @@
                                         action:@selector(presentSearchResultsController)];
     [self.navigationItem setRightBarButtonItem:rightButtonItem animated:NO];
     
+    
 }
 
 #pragma mark - Loading data

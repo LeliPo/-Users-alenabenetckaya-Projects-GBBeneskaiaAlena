@@ -10,6 +10,8 @@
 #import <YYWebImage/YYWebImage.h>
 #import "APIManager.h"
 #import "UIColor+ColorPalette.h"
+#import "CoreDataHelper.h"
+
 
 @interface TicketTableViewCell ()
 @property(nonatomic, strong) UIImageView *airlineLogoView;

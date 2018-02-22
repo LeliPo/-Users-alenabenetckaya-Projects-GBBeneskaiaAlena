@@ -33,6 +33,7 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.navigationItem.title = @"Билеты";
     self.navigationItem.backBarButtonItem.title = @"Назад";
+ //   self.navigationItem.hidesSearchBarWhenScrolling = NO;
 }
 
 #pragma mark - Table view data source

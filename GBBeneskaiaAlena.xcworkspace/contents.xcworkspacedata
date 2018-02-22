@@ -2,14 +2,689 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/alenabenetckaya/Projects/GBBeneskaiaAlena/GBBeneskaiaAlena/FavoriteTicket+CoreDataClass.swift">
+      location = "group:GBBeneskaiaAlena/Objects/Manager/CoreData/FavoriteTicket+CoreDataClass.h">
    </FileRef>
    <FileRef
-      location = "group:/Users/alenabenetckaya/Projects/GBBeneskaiaAlena/GBBeneskaiaAlena/FavoriteTicket+CoreDataProperties.swift">
+      location = "group:GBBeneskaiaAlena/Objects/Manager/CoreData/FavoriteTicket+CoreDataClass.m">
+   </FileRef>
+   <FileRef
+      location = "group:GBBeneskaiaAlena/Objects/Manager/CoreData/FavoriteTicket+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:GBBeneskaiaAlena/Objects/Manager/CoreData/FavoriteTicket+CoreDataProperties.m">
    </FileRef>
    <FileRef
       location = "group:GBBeneskaiaAlena.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:"
+      name = "">
+      <FileRef
+         location = "group:FavoriteTicket+CoreDataClass.swift">
+      </FileRef>
+      <FileRef
+         location = "group:FavoriteTicket+CoreDataProperties.swift">
+      </FileRef>
+      <Group
+         location = "group:GBBeneskaiaAlena"
+         name = "GBBeneskaiaAlena">
+         <FileRef
+            location = "group:AppDelegate.h">
+         </FileRef>
+         <FileRef
+            location = "group:AppDelegate.m">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <Group
+            location = "group:JSON"
+            name = "JSON">
+            <FileRef
+               location = "group:airports.json">
+            </FileRef>
+            <FileRef
+               location = "group:cities.json">
+            </FileRef>
+            <FileRef
+               location = "group:countries.json">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <Group
+            location = "group:Objects"
+            name = "Objects">
+            <Group
+               location = "group:Manager"
+               name = "Manager">
+               <FileRef
+                  location = "group:APIManager.h">
+               </FileRef>
+               <FileRef
+                  location = "group:APIManager.m">
+               </FileRef>
+               <Group
+                  location = "group:CoreData"
+                  name = "CoreData">
+                  <FileRef
+                     location = "group:FavoriteTicket.xcdatamodeld">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:CoreDataHelper.h">
+               </FileRef>
+               <FileRef
+                  location = "group:CoreDataHelper.m">
+               </FileRef>
+               <FileRef
+                  location = "group:DataManager.h">
+               </FileRef>
+               <FileRef
+                  location = "group:DataManager.m">
+               </FileRef>
+               <FileRef
+                  location = "group:DataSourceTypeEnum.h">
+               </FileRef>
+               <FileRef
+                  location = "group:SearchRequest.h">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Place"
+               name = "Place">
+               <FileRef
+                  location = "group:Airport.h">
+               </FileRef>
+               <FileRef
+                  location = "group:Airport.m">
+               </FileRef>
+               <FileRef
+                  location = "group:City.h">
+               </FileRef>
+               <FileRef
+                  location = "group:City.m">
+               </FileRef>
+               <FileRef
+                  location = "group:Country.h">
+               </FileRef>
+               <FileRef
+                  location = "group:Country.m">
+               </FileRef>
+               <FileRef
+                  location = "group:Place.h">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:SearchResultsTableViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:SearchResultsTableViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:Ticket.h">
+            </FileRef>
+            <FileRef
+               location = "group:Ticket.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:View"
+            name = "View">
+            <Group
+               location = "group:AnotherView"
+               name = "AnotherView">
+               <FileRef
+                  location = "group:AnotherViewController.h">
+               </FileRef>
+               <FileRef
+                  location = "group:AnotherViewController.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NavigationViewController.h">
+               </FileRef>
+               <FileRef
+                  location = "group:NavigationViewController.m">
+               </FileRef>
+               <FileRef
+                  location = "group:TabBarController.h">
+               </FileRef>
+               <FileRef
+                  location = "group:TabBarController.m">
+               </FileRef>
+               <FileRef
+                  location = "group:TicketTableViewCell.h">
+               </FileRef>
+               <FileRef
+                  location = "group:TicketTableViewCell.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:main"
+               name = "main">
+               <FileRef
+                  location = "group:MainView.h">
+               </FileRef>
+               <FileRef
+                  location = "group:MainView.m">
+               </FileRef>
+               <FileRef
+                  location = "group:MainViewController.h">
+               </FileRef>
+               <FileRef
+                  location = "group:MainViewController.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Map"
+               name = "Map">
+               <FileRef
+                  location = "group:LocationService.h">
+               </FileRef>
+               <FileRef
+                  location = "group:LocationService.m">
+               </FileRef>
+               <FileRef
+                  location = "group:MapPrice.h">
+               </FileRef>
+               <FileRef
+                  location = "group:MapPrice.m">
+               </FileRef>
+               <FileRef
+                  location = "group:MapViewController.h">
+               </FileRef>
+               <FileRef
+                  location = "group:MapViewController.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Place"
+               name = "Place">
+               <FileRef
+                  location = "group:PlacesTableViewController.h">
+               </FileRef>
+               <FileRef
+                  location = "group:PlacesTableViewController.m">
+               </FileRef>
+               <FileRef
+                  location = "group:PlaceTableViewCell.h">
+               </FileRef>
+               <FileRef
+                  location = "group:PlaceTableViewCell.m">
+               </FileRef>
+               <FileRef
+                  location = "group:PlaceViewController.h">
+               </FileRef>
+               <FileRef
+                  location = "group:PlaceViewController.m">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:TableViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:TableViewController.m">
+            </FileRef>
+            <Group
+               location = "group:UIComponent"
+               name = "UIComponent">
+               <FileRef
+                  location = "group:NSDate+FromISOString.h">
+               </FileRef>
+               <FileRef
+                  location = "group:NSDate+FromISOString.m">
+               </FileRef>
+               <FileRef
+                  location = "group:UIButton+Style.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIButton+Style.m">
+               </FileRef>
+               <FileRef
+                  location = "group:UIColor+ColorPalette.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIColor+ColorPalette.m">
+               </FileRef>
+               <FileRef
+                  location = "group:UILabel+Style.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UILabel+Style.m">
+               </FileRef>
+               <FileRef
+                  location = "group:UILable.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UILable.m">
+               </FileRef>
+               <FileRef
+                  location = "group:UIView+GetController.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIView+GetController.m">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:GBBeneskaiaAlena.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:GBBeneskaiaAlena.xcworkspace">
+      </FileRef>
+      <FileRef
+         location = "group:Podfile">
+      </FileRef>
+      <FileRef
+         location = "group:Podfile.lock">
+      </FileRef>
+      <Group
+         location = "group:Pods"
+         name = "Pods">
+         <Group
+            location = "group:Headers"
+            name = "Headers">
+            <Group
+               location = "group:Private"
+               name = "Private">
+               <Group
+                  location = "group:YYCache"
+                  name = "YYCache">
+                  <FileRef
+                     location = "group:YYCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYDiskCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYKVStorage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYMemoryCache.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:YYImage"
+                  name = "YYImage">
+                  <FileRef
+                     location = "group:YYAnimatedImageView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYFrameImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYImageCoder.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYSpriteSheetImage.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:YYWebImage"
+                  name = "YYWebImage">
+                  <FileRef
+                     location = "group:_YYWebImageSetter.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CALayer+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MKAnnotationView+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIButton+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImage+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImageView+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYImageCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYWebImageManager.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYWebImageOperation.h">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Public"
+               name = "Public">
+               <Group
+                  location = "group:YYCache"
+                  name = "YYCache">
+                  <FileRef
+                     location = "group:YYCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYDiskCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYKVStorage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYMemoryCache.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:YYImage"
+                  name = "YYImage">
+                  <FileRef
+                     location = "group:YYAnimatedImageView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYFrameImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYImageCoder.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYSpriteSheetImage.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:YYWebImage"
+                  name = "YYWebImage">
+                  <FileRef
+                     location = "group:CALayer+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MKAnnotationView+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIButton+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImage+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImageView+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYImageCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYWebImageManager.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:YYWebImageOperation.h">
+                  </FileRef>
+               </Group>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Local Podspecs"
+            name = "Local Podspecs">
+         </Group>
+         <FileRef
+            location = "group:Manifest.lock">
+         </FileRef>
+         <FileRef
+            location = "group:Pods.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:Target Support Files"
+            name = "Target Support Files">
+            <Group
+               location = "group:Pods-GBBeneskaiaAlena"
+               name = "Pods-GBBeneskaiaAlena">
+               <FileRef
+                  location = "group:Pods-GBBeneskaiaAlena-acknowledgements.markdown">
+               </FileRef>
+               <FileRef
+                  location = "group:Pods-GBBeneskaiaAlena-acknowledgements.plist">
+               </FileRef>
+               <FileRef
+                  location = "group:Pods-GBBeneskaiaAlena-dummy.m">
+               </FileRef>
+               <FileRef
+                  location = "group:Pods-GBBeneskaiaAlena-frameworks.sh">
+               </FileRef>
+               <FileRef
+                  location = "group:Pods-GBBeneskaiaAlena-resources.sh">
+               </FileRef>
+               <FileRef
+                  location = "group:Pods-GBBeneskaiaAlena.debug.xcconfig">
+               </FileRef>
+               <FileRef
+                  location = "group:Pods-GBBeneskaiaAlena.release.xcconfig">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:YYCache"
+               name = "YYCache">
+               <FileRef
+                  location = "group:YYCache-dummy.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYCache-prefix.pch">
+               </FileRef>
+               <FileRef
+                  location = "group:YYCache.xcconfig">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:YYImage"
+               name = "YYImage">
+               <FileRef
+                  location = "group:YYImage-dummy.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYImage-prefix.pch">
+               </FileRef>
+               <FileRef
+                  location = "group:YYImage.xcconfig">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:YYWebImage"
+               name = "YYWebImage">
+               <FileRef
+                  location = "group:YYWebImage-dummy.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYWebImage-prefix.pch">
+               </FileRef>
+               <FileRef
+                  location = "group:YYWebImage.xcconfig">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:YYCache"
+            name = "YYCache">
+            <FileRef
+               location = "group:LICENSE">
+            </FileRef>
+            <FileRef
+               location = "group:README.md">
+            </FileRef>
+            <Group
+               location = "group:YYCache"
+               name = "YYCache">
+               <FileRef
+                  location = "group:YYCache.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYCache.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYDiskCache.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYDiskCache.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYKVStorage.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYKVStorage.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYMemoryCache.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYMemoryCache.m">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:YYImage"
+            name = "YYImage">
+            <FileRef
+               location = "group:LICENSE">
+            </FileRef>
+            <FileRef
+               location = "group:README.md">
+            </FileRef>
+            <Group
+               location = "group:YYImage"
+               name = "YYImage">
+               <FileRef
+                  location = "group:YYAnimatedImageView.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYAnimatedImageView.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYFrameImage.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYFrameImage.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYImage.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYImage.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYImageCoder.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYImageCoder.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYSpriteSheetImage.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYSpriteSheetImage.m">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:YYWebImage"
+            name = "YYWebImage">
+            <FileRef
+               location = "group:LICENSE">
+            </FileRef>
+            <FileRef
+               location = "group:README.md">
+            </FileRef>
+            <Group
+               location = "group:YYWebImage"
+               name = "YYWebImage">
+               <Group
+                  location = "group:Categories"
+                  name = "Categories">
+                  <FileRef
+                     location = "group:_YYWebImageSetter.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:_YYWebImageSetter.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CALayer+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CALayer+YYWebImage.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MKAnnotationView+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MKAnnotationView+YYWebImage.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIButton+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIButton+YYWebImage.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImage+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImage+YYWebImage.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImageView+YYWebImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImageView+YYWebImage.m">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:YYImageCache.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYImageCache.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYWebImage.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYWebImageManager.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYWebImageManager.m">
+               </FileRef>
+               <FileRef
+                  location = "group:YYWebImageOperation.h">
+               </FileRef>
+               <FileRef
+                  location = "group:YYWebImageOperation.m">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
